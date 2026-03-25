@@ -1,0 +1,24 @@
+[tool.poetry]
+package-mode = false
+
+[project]
+name = "django-app"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "senku",email = "lektar4k7@gmail.com"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "django (==4.2)",
+    "djangorestframework (>=3.17.1,<4.0.0)",
+    "django-filter (>=23,<24)",
+    "django-debug-toolbar (==4.2)",
+    "gunicorn (>=25.2.0,<26.0.0)",
+    "pillow (>=12.1.1,<13.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
